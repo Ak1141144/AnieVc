@@ -24,8 +24,8 @@ def start_pannel():
                 InlineKeyboardButton(text="🎚 Commands Menu", url="https://telegra.ph/Music-Bot-12-05")
             ],
             [ 
-                InlineKeyboardButton(text="📨Official Channel", url="https://t.me/Aniebots"),
-                InlineKeyboardButton(text="📨Support Group", url="https://t.me/Aniebotsupports")
+                InlineKeyboardButton(text="📨Official Channel", url="https://t.me/JANEMAN_UPDATE"),
+                InlineKeyboardButton(text="📨Support Group", url="https://t.me/ALONE_WORLD_OP")
             ],
     ]
     return "🎛  **This is Music Music Bot**", buttons
@@ -33,16 +33,16 @@ def start_pannel():
 pstart_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("💞 Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton("ADD ME TO GROUP", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
                 ], 
-                [InlineKeyboardButton("🧰 Cᴏᴍᴍᴀɴᴅꜱ 🧰", url=f"https://telegra.ph/Music-Bot-12-05")],
+                [InlineKeyboardButton("COMMAND", url=f"https://t.me/JANEMAN_UPDATE/4")],
                 [
                     InlineKeyboardButton(
-                        "📢 Uᴘᴅᴀᴛᴇꜱ 📢", url=f"https://t.me/Aniebots"), 
+                        "OFFICIAL GROUP", url=f"https://t.me/ALONE_WORLD_OP"), 
                     InlineKeyboardButton(
-                        "💬 Sᴜᴘᴘᴏʀᴛ 💬", url=f"https://t.me/Aniebotsupports")
+                        "OFFICIAL CHANNEL", url=f"https://t.me/JANEMAN_UPDATE")
                 ],
-                [ InlineKeyboardButton("🧑‍💻 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 🧑‍💻", url=f"https://GitHub.com/Anieteam/Anievc"),]
+                [ InlineKeyboardButton("OWNER", url=f"@MR_X_OP_BOLTE"),]
 
             ]
         )
@@ -63,7 +63,7 @@ async def welcome(_, message: Message):
                 await remove_active_chat(chat_id)
             if member.id == BOT_ID:
                 out = start_pannel()
-                await message.reply_text(f"Welcome To Anie Music\n\nPromote me as administrator in your group otherwise I will not function properly.", reply_markup=InlineKeyboardMarkup(out[1]))
+                await message.reply_text(f"Welcome To Janeman Music\n\nPromote me as administrator in your group otherwise I will not function properly.", reply_markup=InlineKeyboardMarkup(out[1]))
                 return
         except:
             return
@@ -116,7 +116,7 @@ async def play(_, message: Message):
 📎**Channel Link:** [Visit From Here]({x["channel_url"]})
 🔗**Link:** [Link]({x["webpage_url"]})
 
-⚡️ __Searched Powered By Anir Music Bot__"""
+⚡️ __Searched Powered By Janeman Music Bot__"""
             link = (x["webpage_url"])
             buttons = personal_markup(link)
             userid = message.from_user.id
